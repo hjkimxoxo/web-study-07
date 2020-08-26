@@ -29,6 +29,9 @@ public class MemberServlet extends HttpServlet {
 		RequestDispatcher dp = request.getRequestDispatcher("09_el.jsp");
 		dp.forward(request, response);
 		
+		if("color".equals("1")) {
+			System.out.println("빨강");
+		}
 		
 	}
 }
